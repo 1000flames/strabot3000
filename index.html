@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A clean starter website for Strabot 3000." />
+    <title>Strabot 3000</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">S3</span>
+        <span class="brand-name">Strabot 3000</span>
+      </div>
+      <a class="button button-ghost" href="#contact">Get in touch</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Static site starter</p>
+          <h1>Build fast, keep it simple, ship with confidence.</h1>
+          <p class="lede">
+            This repo now has a clean, responsive website you can evolve into
+            whatever you need next.
+          </p>
+          <div class="actions">
+            <a class="button" href="#features">See features</a>
+            <button class="button button-secondary" id="highlight-btn" type="button">
+              Highlight the next step
+            </button>
+          </div>
+        </div>
+
+        <aside class="hero-card" aria-label="Project summary">
+          <div class="card-badge">Ready</div>
+          <h2>What’s here</h2>
+          <ul>
+            <li>Semantic HTML</li>
+            <li>Responsive CSS</li>
+            <li>Lightweight JavaScript</li>
+            <li>Git versioning ready</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section" id="features">
+        <div class="section-heading">
+          <p class="eyebrow">Features</p>
+          <h2>A solid base for a real site.</h2>
+        </div>
+
+        <div class="grid">
+          <article class="panel">
+            <h3>Clean layout</h3>
+            <p>Simple sections, clear hierarchy, and room for your content.</p>
+          </article>
+          <article class="panel">
+            <h3>Mobile friendly</h3>
+            <p>Scales down nicely without extra frameworks or build steps.</p>
+          </article>
+          <article class="panel">
+            <h3>Easy to edit</h3>
+            <p>Plain files, no dependency pile, no mystery tooling.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div>
+          <p class="eyebrow">Next</p>
+          <h2>Tell me what this site should become.</h2>
+          <p>
+            I can turn this into a portfolio, landing page, product page, or a
+            small multi-page site.
+          </p>
+        </div>
+        <a class="button" href="mailto:hello@example.com">hello@example.com</a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Strabot 3000</span>
+      <span>Built as a static starter.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
