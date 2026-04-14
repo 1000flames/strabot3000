@@ -1,12 +1,10 @@
 # Strabot 3000
 
-A lightweight static website starter.
+Product landing page mock-up for a web scraping platform.
 
-## Local preview
+## Preview
 
-Open `index.html` directly in a browser, or serve the folder with any static file server.
-
-Example:
+Open `index.html` directly in a browser, or run:
 
 ```bash
 python3 -m http.server 8000
@@ -14,9 +12,8 @@ python3 -m http.server 8000
 
 Then visit `http://localhost:8000`.
 
-## What's included
+## Notes
 
-- Semantic HTML
-- Responsive CSS
-- Tiny JavaScript interaction
-- Ready to version with Git and GitHub
+- Designed as a mock-up first
+- Bright Data integration can be added later
+- Static HTML, CSS, and a tiny bit of JavaScript

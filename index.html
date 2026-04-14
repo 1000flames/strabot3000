@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A clean starter website for Strabot 3000." />
+    <meta name="description" content="Strabot 3000, a product mock-up for scraping content from websites." />
     <title>Strabot 3000</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,78 +17,151 @@
     <header class="topbar">
       <div class="brand">
         <span class="brand-mark">S3</span>
-        <span class="brand-name">Strabot 3000</span>
+        <div>
+          <div class="brand-name">Strabot 3000</div>
+          <div class="brand-subtitle">Web scraping platform, mock-up</div>
+        </div>
       </div>
-      <a class="button button-ghost" href="#contact">Get in touch</a>
+      <div class="topbar-actions">
+        <span class="pill pill-muted">Bright Data next</span>
+        <a class="button button-ghost" href="#contact">Request demo</a>
+      </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Static site starter</p>
-          <h1>Build fast, keep it simple, ship with confidence.</h1>
+          <p class="eyebrow">Product page concept</p>
+          <h1>Scrape the web. Structure the data. Move faster.</h1>
           <p class="lede">
-            This repo now has a clean, responsive website you can evolve into
-            whatever you need next.
+            Strabot 3000 is a product mock-up for collecting content from websites,
+            turning messy pages into clean, usable output. Bright Data integration can
+            slot in later once the product direction is locked.
           </p>
           <div class="actions">
-            <a class="button" href="#features">See features</a>
+            <a class="button" href="#workflow">See the workflow</a>
             <button class="button button-secondary" id="highlight-btn" type="button">
-              Highlight the next step
+              Preview the integration area
             </button>
+          </div>
+          <div class="hero-tags">
+            <span class="pill">Structured extraction</span>
+            <span class="pill">Automation-ready</span>
+            <span class="pill">Mock-up first</span>
           </div>
         </div>
 
-        <aside class="hero-card" aria-label="Project summary">
-          <div class="card-badge">Ready</div>
-          <h2>What’s here</h2>
-          <ul>
-            <li>Semantic HTML</li>
-            <li>Responsive CSS</li>
-            <li>Lightweight JavaScript</li>
-            <li>Git versioning ready</li>
-          </ul>
+        <aside class="hero-card" aria-label="Product dashboard mock-up">
+          <div class="card-header">
+            <span class="card-badge">Live preview</span>
+            <span class="card-chip">v0.1</span>
+          </div>
+          <div class="metric-grid">
+            <div class="metric">
+              <strong>128</strong>
+              <span>pages queued</span>
+            </div>
+            <div class="metric">
+              <strong>14</strong>
+              <span>sources connected</span>
+            </div>
+            <div class="metric">
+              <strong>6</strong>
+              <span>formats exported</span>
+            </div>
+            <div class="metric">
+              <strong>99%</strong>
+              <span>clean output</span>
+            </div>
+          </div>
+          <div class="activity-list">
+            <div class="activity success">
+              <span>Product pages</span>
+              <strong>Completed</strong>
+            </div>
+            <div class="activity progress">
+              <span>News feeds</span>
+              <strong>Running</strong>
+            </div>
+            <div class="activity pending">
+              <span>Pricing tables</span>
+              <strong>Queued</strong>
+            </div>
+          </div>
         </aside>
       </section>
 
-      <section class="section" id="features">
+      <section class="section">
         <div class="section-heading">
-          <p class="eyebrow">Features</p>
-          <h2>A solid base for a real site.</h2>
+          <p class="eyebrow">Why it works</p>
+          <h2>Designed like a real product page, not a wireframe.</h2>
         </div>
 
-        <div class="grid">
+        <div class="grid three-up">
           <article class="panel">
-            <h3>Clean layout</h3>
-            <p>Simple sections, clear hierarchy, and room for your content.</p>
+            <h3>Capture content</h3>
+            <p>Target pages, define the fields you want, and pull structured content in one pass.</p>
           </article>
           <article class="panel">
-            <h3>Mobile friendly</h3>
-            <p>Scales down nicely without extra frameworks or build steps.</p>
+            <h3>Normalize output</h3>
+            <p>Turn inconsistent layouts into clean records you can reuse in a dashboard or API.</p>
           </article>
           <article class="panel">
-            <h3>Easy to edit</h3>
-            <p>Plain files, no dependency pile, no mystery tooling.</p>
+            <h3>Scale later</h3>
+            <p>Bright Data can be added as the infrastructure layer once the mock-up becomes the real product.</p>
           </article>
         </div>
       </section>
 
-      <section class="section contact" id="contact">
-        <div>
-          <p class="eyebrow">Next</p>
-          <h2>Tell me what this site should become.</h2>
-          <p>
-            I can turn this into a portfolio, landing page, product page, or a
-            small multi-page site.
-          </p>
+      <section class="section" id="workflow">
+        <div class="section-heading">
+          <p class="eyebrow">Workflow</p>
+          <h2>Simple enough to explain in a sales call.</h2>
         </div>
-        <a class="button" href="mailto:hello@example.com">hello@example.com</a>
+
+        <div class="grid two-up">
+          <article class="panel step">
+            <span class="step-number">01</span>
+            <h3>Pick the sources</h3>
+            <p>Choose the sites, pages, or sections you want to monitor and extract.</p>
+          </article>
+          <article class="panel step">
+            <span class="step-number">02</span>
+            <h3>Define the fields</h3>
+            <p>Map titles, prices, links, descriptions, or any custom content you need.</p>
+          </article>
+          <article class="panel step">
+            <span class="step-number">03</span>
+            <h3>Export and use</h3>
+            <p>Send data to CSV, JSON, an API, or a downstream dashboard.</p>
+          </article>
+          <article class="panel step integration" id="integration">
+            <span class="step-number">04</span>
+            <h3>Bright Data layer</h3>
+            <p>
+              Later, we can wire in Bright Data to handle the network side of the product.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="contact">
+          <div>
+            <p class="eyebrow">Next</p>
+            <h2>Tell me how aggressive the product should feel.</h2>
+            <p>
+              I can push this toward enterprise, startup, or sharp agency-style marketing.
+            </p>
+          </div>
+          <a class="button" href="mailto:hello@example.com">hello@example.com</a>
+        </div>
       </section>
     </main>
 
     <footer class="footer">
       <span>© <span id="year"></span> Strabot 3000</span>
-      <span>Built as a static starter.</span>
+      <span>Product mock-up, ready for the real build.</span>
     </footer>
 
     <script src="script.js"></script>
