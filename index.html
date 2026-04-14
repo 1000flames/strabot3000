@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Strabot 3000, a product mock-up for scraping content from websites." />
+    <meta name="description" content="Strabot 3000, a light mobile-first web app mock-up for scraping content from websites." />
     <title>Strabot 3000</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,11 +19,11 @@
         <span class="brand-mark">S3</span>
         <div>
           <div class="brand-name">Strabot 3000</div>
-          <div class="brand-subtitle">Web scraping platform, mock-up</div>
+          <div class="brand-subtitle">Light mobile web app mock-up</div>
         </div>
       </div>
       <div class="topbar-actions">
-        <span class="pill pill-muted">Bright Data next</span>
+        <span class="pill pill-muted">Bright Data later</span>
         <a class="button button-ghost" href="#contact">Request demo</a>
       </div>
     </header>
@@ -31,84 +31,102 @@
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Product page concept</p>
-          <h1>Scrape the web. Structure the data. Move faster.</h1>
+          <p class="eyebrow">Mobile-first interface</p>
+          <h1>Scrape content from websites, anywhere.</h1>
           <p class="lede">
-            Strabot 3000 is a product mock-up for collecting content from websites,
-            turning messy pages into clean, usable output. Bright Data integration can
-            slot in later once the product direction is locked.
+            This is a light UI mock-up for a web mobile app that collects page content,
+            cleans it up, and gets it ready for export. Bright Data can be added later
+            when the product becomes real.
           </p>
           <div class="actions">
-            <a class="button" href="#workflow">See the workflow</a>
+            <a class="button" href="#workflow">See workflow</a>
             <button class="button button-secondary" id="highlight-btn" type="button">
-              Preview the integration area
+              Preview the integration
             </button>
           </div>
           <div class="hero-tags">
-            <span class="pill">Structured extraction</span>
-            <span class="pill">Automation-ready</span>
-            <span class="pill">Mock-up first</span>
+            <span class="pill">Fast scan</span>
+            <span class="pill">Clean output</span>
+            <span class="pill">Mobile-ready</span>
           </div>
         </div>
 
-        <aside class="hero-card" aria-label="Product dashboard mock-up">
-          <div class="card-header">
-            <span class="card-badge">Live preview</span>
-            <span class="card-chip">v0.1</span>
+        <aside class="phone-shell" aria-label="App mock-up preview">
+          <div class="phone-top">
+            <span>Scrape jobs</span>
+            <span class="status">Syncing</span>
           </div>
-          <div class="metric-grid">
-            <div class="metric">
+
+          <label class="searchbar" for="site-input">
+            <span class="search-label">Target site</span>
+            <input id="site-input" type="text" value="example.com/products" readonly />
+          </label>
+
+          <div class="job-list">
+            <article class="job-card">
+              <div>
+                <strong>Product pages</strong>
+                <p>Title, price, and availability</p>
+              </div>
+              <span class="job-badge success">Ready</span>
+            </article>
+            <article class="job-card">
+              <div>
+                <strong>News feed</strong>
+                <p>Headline, link, summary</p>
+              </div>
+              <span class="job-badge active">Running</span>
+            </article>
+            <article class="job-card">
+              <div>
+                <strong>Pricing table</strong>
+                <p>Plan names and monthly cost</p>
+              </div>
+              <span class="job-badge muted">Queued</span>
+            </article>
+          </div>
+
+          <div class="mini-stats">
+            <div>
               <strong>128</strong>
-              <span>pages queued</span>
+              <span>pages</span>
             </div>
-            <div class="metric">
+            <div>
               <strong>14</strong>
-              <span>sources connected</span>
+              <span>sources</span>
             </div>
-            <div class="metric">
+            <div>
               <strong>6</strong>
-              <span>formats exported</span>
-            </div>
-            <div class="metric">
-              <strong>99%</strong>
-              <span>clean output</span>
+              <span>exports</span>
             </div>
           </div>
-          <div class="activity-list">
-            <div class="activity success">
-              <span>Product pages</span>
-              <strong>Completed</strong>
-            </div>
-            <div class="activity progress">
-              <span>News feeds</span>
-              <strong>Running</strong>
-            </div>
-            <div class="activity pending">
-              <span>Pricing tables</span>
-              <strong>Queued</strong>
-            </div>
-          </div>
+
+          <nav class="bottom-nav" aria-label="App navigation">
+            <span class="nav-item active">Home</span>
+            <span class="nav-item">Sources</span>
+            <span class="nav-item">Exports</span>
+          </nav>
         </aside>
       </section>
 
-      <section class="section">
+      <section class="section" id="features">
         <div class="section-heading">
-          <p class="eyebrow">Why it works</p>
-          <h2>Designed like a real product page, not a wireframe.</h2>
+          <p class="eyebrow">What it needs to do</p>
+          <h2>A simple app flow, optimized for small screens.</h2>
         </div>
 
         <div class="grid three-up">
           <article class="panel">
-            <h3>Capture content</h3>
-            <p>Target pages, define the fields you want, and pull structured content in one pass.</p>
+            <h3>Capture</h3>
+            <p>Point the app at a page and pull the content you care about.</p>
           </article>
           <article class="panel">
-            <h3>Normalize output</h3>
-            <p>Turn inconsistent layouts into clean records you can reuse in a dashboard or API.</p>
+            <h3>Clean</h3>
+            <p>Normalize messy data into a structured format you can use right away.</p>
           </article>
           <article class="panel">
-            <h3>Scale later</h3>
-            <p>Bright Data can be added as the infrastructure layer once the mock-up becomes the real product.</p>
+            <h3>Ship</h3>
+            <p>Export to CSV, JSON, or your downstream workflow without extra fuss.</p>
           </article>
         </div>
       </section>
@@ -116,31 +134,29 @@
       <section class="section" id="workflow">
         <div class="section-heading">
           <p class="eyebrow">Workflow</p>
-          <h2>Simple enough to explain in a sales call.</h2>
+          <h2>Designed for a thumb-friendly dashboard.</h2>
         </div>
 
         <div class="grid two-up">
           <article class="panel step">
             <span class="step-number">01</span>
-            <h3>Pick the sources</h3>
-            <p>Choose the sites, pages, or sections you want to monitor and extract.</p>
+            <h3>Add a source</h3>
+            <p>Paste a website, page, or list of URLs into the app.</p>
           </article>
           <article class="panel step">
             <span class="step-number">02</span>
-            <h3>Define the fields</h3>
-            <p>Map titles, prices, links, descriptions, or any custom content you need.</p>
+            <h3>Define fields</h3>
+            <p>Choose the parts of the page that should become structured data.</p>
           </article>
           <article class="panel step">
             <span class="step-number">03</span>
-            <h3>Export and use</h3>
-            <p>Send data to CSV, JSON, an API, or a downstream dashboard.</p>
+            <h3>Run on mobile</h3>
+            <p>Keep an eye on scrape jobs and results from a clean mobile layout.</p>
           </article>
           <article class="panel step integration" id="integration">
             <span class="step-number">04</span>
             <h3>Bright Data layer</h3>
-            <p>
-              Later, we can wire in Bright Data to handle the network side of the product.
-            </p>
+            <p>Later, we can wire in Bright Data to power the network side of the product.</p>
           </article>
         </div>
       </section>
@@ -149,9 +165,9 @@
         <div class="contact">
           <div>
             <p class="eyebrow">Next</p>
-            <h2>Tell me how aggressive the product should feel.</h2>
+            <h2>We can push this more app-like or more sales-like.</h2>
             <p>
-              I can push this toward enterprise, startup, or sharp agency-style marketing.
+              If you want, I can make it feel closer to a real mobile SaaS dashboard next.
             </p>
           </div>
           <a class="button" href="mailto:hello@example.com">hello@example.com</a>
@@ -161,7 +177,7 @@
 
     <footer class="footer">
       <span>© <span id="year"></span> Strabot 3000</span>
-      <span>Product mock-up, ready for the real build.</span>
+      <span>Light mobile UI mock-up.</span>
     </footer>
 
     <script src="script.js"></script>
