@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Strabot 3000, a light mobile-first web app mock-up for scraping content from websites." />
-    <title>Strabot 3000</title>
+    <meta
+      name="description"
+      content="TenderRadar, the go-to website for tender documents. Live scraper proof included."
+    />
+    <title>TenderRadar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,168 +19,155 @@
   <body>
     <header class="topbar">
       <div class="brand">
-        <span class="brand-mark">S3</span>
+        <span class="brand-mark">TR</span>
         <div>
-          <div class="brand-name">Strabot 3000</div>
-          <div class="brand-subtitle">Light mobile web app mock-up</div>
+          <div class="brand-name">TenderRadar</div>
+          <div class="brand-subtitle">The go-to website for tender documents</div>
         </div>
       </div>
       <div class="topbar-actions">
-        <span class="pill pill-muted">Bright Data later</span>
-        <a class="button button-ghost" href="#contact">Request demo</a>
+        <span class="pill pill-muted">Live scraper proof</span>
+        <a class="button button-ghost" href="#live">See live results</a>
       </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Mobile-first interface</p>
-          <h1>Scrape content from websites, anywhere.</h1>
+          <p class="eyebrow">Tenders, already working</p>
+          <h1>The fastest way to find tender documents.</h1>
           <p class="lede">
-            This is a light UI mock-up for a web mobile app that collects page content,
-            cleans it up, and gets it ready for export. Bright Data can be added later
-            when the product becomes real.
+            We scrape public tender portals, normalize the documents, and surface the
+            newest opportunities before everyone else does.
           </p>
           <div class="actions">
-            <a class="button" href="#workflow">See workflow</a>
+            <a class="button" href="#live">View live feed</a>
             <button class="button button-secondary" id="highlight-btn" type="button">
-              Preview the integration
+              Show how it works
             </button>
           </div>
           <div class="hero-tags">
-            <span class="pill">Fast scan</span>
-            <span class="pill">Clean output</span>
-            <span class="pill">Mobile-ready</span>
+            <span class="pill">Public sources</span>
+            <span class="pill">Structured output</span>
+            <span class="pill">Daily-ready feed</span>
           </div>
         </div>
 
-        <aside class="phone-shell" aria-label="App mock-up preview">
-          <div class="phone-top">
-            <span>Scrape jobs</span>
-            <span class="status">Syncing</span>
+        <aside class="hero-panel" aria-label="Live product proof summary">
+          <div class="hero-panel-top">
+            <span class="panel-chip">Working now</span>
+            <span class="panel-chip panel-chip-soft">Public VOB feed</span>
           </div>
 
-          <label class="searchbar" for="site-input">
-            <span class="search-label">Target site</span>
-            <input id="site-input" type="text" value="example.com/products" readonly />
-          </label>
-
-          <div class="job-list">
-            <article class="job-card">
-              <div>
-                <strong>Product pages</strong>
-                <p>Title, price, and availability</p>
-              </div>
-              <span class="job-badge success">Ready</span>
-            </article>
-            <article class="job-card">
-              <div>
-                <strong>News feed</strong>
-                <p>Headline, link, summary</p>
-              </div>
-              <span class="job-badge active">Running</span>
-            </article>
-            <article class="job-card">
-              <div>
-                <strong>Pricing table</strong>
-                <p>Plan names and monthly cost</p>
-              </div>
-              <span class="job-badge muted">Queued</span>
-            </article>
-          </div>
-
-          <div class="mini-stats">
-            <div>
-              <strong>128</strong>
-              <span>pages</span>
+          <div class="stat-grid">
+            <div class="stat-card">
+              <strong id="doc-count">—</strong>
+              <span>live tender docs</span>
             </div>
-            <div>
-              <strong>14</strong>
-              <span>sources</span>
+            <div class="stat-card">
+              <strong id="page-count">—</strong>
+              <span>scraped pages</span>
             </div>
-            <div>
-              <strong>6</strong>
-              <span>exports</span>
+            <div class="stat-card">
+              <strong id="latest-date">—</strong>
+              <span>latest scrape</span>
+            </div>
+            <div class="stat-card">
+              <strong id="source-count">—</strong>
+              <span>source portal</span>
             </div>
           </div>
 
-          <nav class="bottom-nav" aria-label="App navigation">
-            <span class="nav-item active">Home</span>
-            <span class="nav-item">Sources</span>
-            <span class="nav-item">Exports</span>
-          </nav>
+          <div class="panel-note">
+            <p class="eyebrow">Proof</p>
+            <h2>The feed below is rendered from the scraper output.</h2>
+            <p>
+              That means the product already works, the site is not just a mock-up.
+            </p>
+          </div>
         </aside>
       </section>
 
-      <section class="section" id="features">
+      <section class="section" id="live">
         <div class="section-heading">
-          <p class="eyebrow">What it needs to do</p>
-          <h2>A simple app flow, optimized for small screens.</h2>
+          <p class="eyebrow">Live feed</p>
+          <h2>Latest tender documents, pulled from the source and ready to click.</h2>
+        </div>
+        <div id="live-feed" class="feed-grid">
+          <div class="loading-card">Loading live feed…</div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Why teams switch</p>
+          <h2>Not a lead magnet, a working tender engine.</h2>
         </div>
 
         <div class="grid three-up">
-          <article class="panel">
-            <h3>Capture</h3>
-            <p>Point the app at a page and pull the content you care about.</p>
+          <article class="panel-card">
+            <h3>Find faster</h3>
+            <p>Surface fresh public tenders as soon as they appear.</p>
           </article>
-          <article class="panel">
-            <h3>Clean</h3>
-            <p>Normalize messy data into a structured format you can use right away.</p>
+          <article class="panel-card">
+            <h3>Read cleaner</h3>
+            <p>Normalize messy portal pages into structured, usable records.</p>
           </article>
-          <article class="panel">
-            <h3>Ship</h3>
-            <p>Export to CSV, JSON, or your downstream workflow without extra fuss.</p>
+          <article class="panel-card">
+            <h3>Click through</h3>
+            <p>Jump directly to the official detail page from every result card.</p>
           </article>
         </div>
       </section>
 
       <section class="section" id="workflow">
         <div class="section-heading">
-          <p class="eyebrow">Workflow</p>
-          <h2>Designed for a thumb-friendly dashboard.</h2>
+          <p class="eyebrow">How it works</p>
+          <h2>Simple enough to trust, strong enough to ship.</h2>
         </div>
 
         <div class="grid two-up">
-          <article class="panel step">
+          <article class="panel-card step-card">
             <span class="step-number">01</span>
-            <h3>Add a source</h3>
-            <p>Paste a website, page, or list of URLs into the app.</p>
+            <h3>Scrape the portal</h3>
+            <p>Collect the public tender listings and resolve the detail pages.</p>
           </article>
-          <article class="panel step">
+          <article class="panel-card step-card">
             <span class="step-number">02</span>
-            <h3>Define fields</h3>
-            <p>Choose the parts of the page that should become structured data.</p>
+            <h3>Structure the data</h3>
+            <p>Turn the listings into clean JSON with titles, deadlines, and links.</p>
           </article>
-          <article class="panel step">
+          <article class="panel-card step-card">
             <span class="step-number">03</span>
-            <h3>Run on mobile</h3>
-            <p>Keep an eye on scrape jobs and results from a clean mobile layout.</p>
+            <h3>Show the proof</h3>
+            <p>Render the scraped feed directly on the website, so people can see it works.</p>
           </article>
-          <article class="panel step integration" id="integration">
+          <article class="panel-card step-card highlight-card">
             <span class="step-number">04</span>
-            <h3>Bright Data layer</h3>
-            <p>Later, we can wire in Bright Data to power the network side of the product.</p>
+            <h3>Scale later</h3>
+            <p>Wire in login, alerts, exports, and tracking when you are ready.</p>
           </article>
         </div>
       </section>
 
-      <section class="section" id="contact">
-        <div class="contact">
+      <section class="section cta-section" id="contact">
+        <div class="cta-card">
           <div>
-            <p class="eyebrow">Next</p>
-            <h2>We can push this more app-like or more sales-like.</h2>
+            <p class="eyebrow">Ready</p>
+            <h2>Use the product that already proves it can find tenders.</h2>
             <p>
-              If you want, I can make it feel closer to a real mobile SaaS dashboard next.
+              If you want, I can turn this into a sharper sales page, an investor page,
+              or a real production app next.
             </p>
           </div>
-          <a class="button" href="mailto:hello@example.com">hello@example.com</a>
+          <a class="button" href="mailto:hello@example.com">Request access</a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <span>© <span id="year"></span> Strabot 3000</span>
-      <span>Light mobile UI mock-up.</span>
+      <span>© <span id="year"></span> TenderRadar</span>
+      <span>Live scraper proof included.</span>
     </footer>
 
     <script src="script.js"></script>
